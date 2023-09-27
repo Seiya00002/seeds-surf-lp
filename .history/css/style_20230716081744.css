@@ -1,0 +1,473 @@
+/* all */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+h2 ,h3 ,p {
+    font-family: 'Hiragino Sans';
+
+}
+/* header */
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header_left {
+    display: flex;
+}
+
+.header_right {
+    display: flex;
+    margin: 0 0 0 auto;
+}
+
+.logo {
+    margin: 10px 10px;
+}
+
+.tel_logo {
+    margin: 20px 10px;
+}
+
+header h1 {
+    font-size: 19px;
+    padding: 18px 10px;
+}
+
+header h2 {
+    font-size: 21px;
+    padding: 15px 10px 0 0;
+}
+
+header p {
+    padding-bottom: 10px;
+}
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+/* main */
+
+/* top */
+.top_wrapper {
+    background-image: url(../img/top_img.jpeg);
+    color: white;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.hero_message {
+    font-size: 15px;
+    color: black;
+    height: 500px;
+    min-width:100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5em;
+    background: rgb(255, 255, 255,0.4);
+}
+
+.top_message {
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+}
+
+.top_message p {
+    padding-top: 20px;
+    font-size: 17px;
+    line-height: 1.6rem;
+}
+
+/* project_wrapper */
+.project_wrapper {
+    margin-bottom: 80px;
+}
+
+.project {
+    float: left;
+    width: 33%;
+    padding: 20px 10px 20px 10px;
+    height: 300px;
+
+}
+
+.project_icon {
+    position: relative;
+
+}
+
+.project_icon h2 {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    color: white;
+    font-weight: normal;
+    
+}
+
+
+@media (max-width: 1000px) {
+    .project {
+        width: 50%;
+    }
+}
+
+@media (max-width: 670px) {
+    .project {
+        width: 100%;
+    }
+}
+
+.clear {
+    clear: left;
+}
+
+/* service_wrapper */
+.service_wrapper {
+    background-color: #fffaf0;
+    padding: 80px 0;
+}
+
+.service_heading {
+padding-bottom: 50px;
+}
+
+.step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+.step_cont {
+    padding-left: 50px;
+}
+
+.step_icon {
+    width: 70px;
+    height: 70px;
+
+}
+
+.step_icon2 {
+    width: 15px;
+    height: 15px;
+
+}
+
+.step h2 {
+    font-size: 14px;
+}
+
+.step p {
+    font-size: 20px;
+    padding-top: 13px;
+}
+
+/* cost_wrapper */
+.cost_wrapper {
+    padding: 80px 0;
+}
+
+.cost_cont {
+    padding-top: 50px;
+    width: 650px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+
+
+.list01 {
+    background-color: black;
+    width: 180px;
+    height: 50px;
+    color: white;
+    margin: 20px 15px;
+    justify-content: center;
+    padding-top: 12px;
+
+}
+
+.list02 {
+    background-color: black;
+    width: 180px;
+    height: 50px;
+    color: white;
+    margin: 20px 15px;
+    justify-content: center;
+    padding-top: 12px;
+
+
+}
+
+@media (max-width: 670px) {
+    .cost_cont h2 {
+        width: 50%;
+    }
+} 
+
+/* contact_wrapper */
+.contact_wrapper {
+    background-image: url(../img/sky&office_img.jpeg);
+    padding: 80px 0;
+    background-size: cover;
+    text-shadow: 6px 6px 10px white, -6px -6px 10px white;
+
+
+}
+
+.contact_wrapper p {
+    padding-bottom: 15px;
+}
+
+.btn {
+    width: 180px;
+    height: 35px;
+    padding: 6px;
+    font-size: 14px;
+    color: black;
+    background-color:#fff176;
+    border: black solid;
+    border-radius: 24px;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: .7;
+
+}
+
+.contact_wrapper h2 {
+    padding-top: 15px;
+}
+
+/* company_wrapper */
+.company_wrapper {
+    padding: 80px 0;
+    background-color: #fffaf0;
+
+}
+
+.company_wrapper p {
+    padding-bottom: 20px;
+}
+
+table.company {
+    border-collapse: collapse;
+    width: 600px;
+    background-color: white;
+    margin: auto;
+}
+
+th, td {
+    border: solid 1px #333;
+    padding: 20px;
+}
+
+.company th,td {
+    text-align: left;
+}
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: gray;
+    padding-bottom: 10px;
+
+}
+
+footer h1 {
+    font-size: 17px;
+}
+
+footer p {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+small {
+    font-size: 7px;
+    
+}
+
+
+/* slideshow 追加 */
+.slide_wrapper{
+    max-width: 100%;
+    height: 400px;
+    margin: auto;
+    
+}
+/*画像配置*/
+.slideshow{
+    max-width: 100%;
+    height: 100%;
+    background-image: url(../img/import-img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 50%;/*左 中央のよせ*/
+}
+/*文字*/
+.disc{
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: 800;
+    padding-top:5%;
+}
+/*>*/
+.next{
+    float: right;
+    top: 0px;
+    right: 50px;
+}
+/*<*/
+.back{
+    float: left;
+    bottom: 0px;
+    left: 30px;
+}
+/*矢印のデザイン*/
+.arrow{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+.arrow::before,
+.arrow::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+.next::before{
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.back::before{
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-left: 5px solid rgb(255, 255, 255);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* CSSアニメーションの指定 */
+.slideshow{
+    transition: background-image 1s ease-in;
+}
+
+/* 計算シュミレーション追加 */
+.btn-box button {
+    width: 180px;
+    height: 35px;
+    padding: 6px;
+    font-size: 14px;
+    color: black;
+    background-color:#fff176;
+    border: black solid;
+    border-radius: 24px;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .btn-box button:hover {
+    opacity: .7;
+  }
+
+
+/* 見積り表追加 */
+.estimate_wrapper {
+    display: none;
+    background-color: #fffaf0;
+    padding: 40px 0;
+}
+
+table.estimate {
+    border-collapse: collapse;
+    width: 450px;
+    background-color: white;
+    margin: auto;
+}
+
+.estimate th{
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.estimate td{
+    text-align: center;
+}
+
+.estimate_wrapper.appear {
+    display: block;
+    animation: .5s fadeIn;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+
+
+
+@media screen and (max-width:768px) { 
+  .slide-pic{
+    height: 250px;
+  }
+    .disc{
+        padding-top:5%;
+    }
+    /*>*/
+    .next{
+        top: 30px;
+    }
+    /*<*/
+    .back{
+        top: 30px;
+    }
+}

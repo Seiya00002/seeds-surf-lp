@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>輸入代行SEEDS SURF</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header_left">
+            <img src="img/sslogo.jpg"
+                alt="logo"
+                width="40"
+                height="40"
+                class="logo">
+            <h1>希少植物・輸入代行</h1>
+
+        </div>
+        <div class="header_right">
+            <img src="img/tel_logo.png"
+                alt="tel_logo"
+                width="35"
+                height="35"
+                class="tel_logo">
+            <div class="header_contact">
+                <h2>090-3048-2693</h2>
+                <p>（平日9:00 ~ 18:00）</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="top_wrapper">
+            <div class="container">
+                <div class="hero_message">
+                    <div class="calculation-app">
+                        <h2>お見積り計算シュミレーション</h2>
+
+                            <p>仕入れ先の地域を選択して下さい。</p>
+                            <form name="form1">
+                                <select name="place">
+                                    <option value="1.2">北米</option>
+                                    <option value="1.2">ヨーロッパ</option>
+                                    <option value="1">アジア</option>
+                                </select>
+                            </form>
+
+                            <p>箱のサイズの予想を選択して下さい。</p>
+                            <form name="form2">
+                                <select name="box">
+                                    <option value="18350">15kg</option>
+                                    <option value="13350">10kg</option>
+                                    <option value="8150">5kg</option>
+                                </select>
+                            </form>
+                            <p>およその商品代金を入力して下さい。</p>
+                            <label>￥</label><input 
+                            type="text" 
+                            id="price" 
+                            value=""
+                            placeholder="200,000"
+                            maxlength="7"
+                            size="10"
+                            ></label>
+
+                            <br>
+                            <br>
+                            <div class="btn-box">
+                                <button id="button">計算Go!!</button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 見積り表 -->
+    <div id="estimate_table" class="estimate_wrapper">
+        <div class="container">
+            <h2>予想お見積り表</h2>
+            <table align="center">
+                <tr>
+                    <th>商品代金</th>
+                    <td>¥<span id="span2"></span></td>
+                </tr>
+                <tr>
+                    <th>検疫手数料</th>
+                    <td>¥<span id="span3"></span></td>
+                </tr>
+                <tr>
+                    <th>送料</th>
+                    <td>¥<span id="span4"></span></td>
+                </tr>
+                <tr>
+                    <th>弊社代行手数料</th>
+                    <td>¥<span id="span5"></span></td>
+                </tr>
+                <tr>
+                    <th>海外送金手数料</th>
+                    <td>¥<span id="span6"></span></td>
+                </tr>
+                <tr>
+                    <th>税金</th>
+                    <td>¥<span id="span7"></span></td>
+                </tr>
+                <tr>
+                  <th>合計</th>
+                  <th>¥<span id="span1"></span></th>
+              </tr>
+            </table>
+            <h3>詳しくは下記の「Cost」欄をご覧下さい。</h3>
+        </div>
+    </div>
+
+
+
+
+
+
+        <div class="top_message">
+            <div class="container">
+                <div class="message">
+                    <h1>SEEDS SURFの輸入代行の強み</h1>
+                    <p>観葉植物など検疫やワシントン条約に関わる特殊な商品の輸入代行が得意です。<br>業者様から個人事業者様、個人様の輸入、どなたもご相談下さい。<br>現地企業との交渉から購買代行全てご対応いたします。</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="project_wrapper">
+            <div class="container">
+                <div class="projects">
+                    <div class="project">
+                        <div class="project_icon">
+                            <img src="img/project_imag1.jpg">
+                            <h2>「迅速・柔軟サービス」</h2>
+                        </div>
+                        <p class="text_contents">フットワークの軽いスタッフが、柔軟にお客様のご要望にご対応いたします。大規模な商社では実現出来ないサービスをご提供いたします。</p>
+
+                    </div>
+                    <div class="project">
+                        <div class="project_icon">
+                            <img src="img/pro_airport.jpg">
+                            <h2>「全世界対応」</h2>
+                        </div>
+                        <p class="text_contents">アジアから、欧州、北米を始めとし、その他オセアニア、南米、アフリカ地域と全地域ご対応出来ます。</p>
+                    
+                    </div>
+                    <div class="project">
+                        <div class="project_icon">
+                            <img src="img/project_img3.jpg">
+                            <h2>「現地企業のご紹介サービス」</h2>
+                        </div>
+                        <p class="text_contents">私たちは信頼出来る良質な業者様とお付き合いがございます。そちらのご紹介も行っております。</p>
+                    </div>
+                        <div class="clear"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="service_wrapper">
+            <div class="container">
+                <div class="service_heading">
+                    <h1>Frow</h1>
+                    <p>輸入取引の流れ</p>
+                </div>
+                <div class="step">
+                    <img src="img/person_img.png"
+                    class="step_icon">
+                    <div class="step_cont">
+                        <h2>Step 1</h2>
+                        <p>現地企業交渉</p>
+                    </div>
+                </div>
+                <img src="img/down_img.png" class="step_icon2">
+
+                <div class="step">
+                    <img src="img/cal_img.png"
+                    class="step_icon">
+                    <div class="step_cont">
+                        <h2>Step 2</h2>
+                        <p>お見積り</p>
+                    </div>
+                </div>
+                <img src="img/down_img.png" class="step_icon2">
+
+                <div class="step">
+                    <img src="img/bank_img.png"
+                    class="step_icon">
+                    <div class="step_cont">
+                        <h2>Step 3</h2>
+                        <p>お支払い</p>
+                    </div>
+                </div>
+                <img src="img/down_img.png" class="step_icon2">
+                <div class="step">
+                    <img src="img/airp_imag.png"                    
+                    class="step_icon">
+                    <div class="step_cont">
+                        <h2>Step 4</h2>
+                        <p>発送</p>
+                    </div>
+                </div>
+                <img src="img/down_img.png" class="step_icon2">
+                <div class="step">
+                    <img src="img/drivery_img.png"
+                    class="step_icon">
+                    <div class="step_cont">
+                        <h2>Step 5</h2>
+                        <p>お受取り</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide_wrapper">
+            <div id="slide" class="slideshow">
+                <p class="disc">SEEDS SURF</p>
+                <a class="arrow next" id="right" href="#"></a>
+                <a class="arrow back" id="left" href="#"></a>
+            </div>
+
+
+
+
+        </div>
+        <div class="cost_wrapper">
+            <div class="container">
+                <div class="cost_heading">
+                    <h1>Cost</h1>
+                    <p>料金について</p>
+                </div>
+                <div class="cost_cont">
+                    <div class="list01">
+                        <p>商品代金</p>
+                    </div>
+                    <div class="list01">
+                        <p>検疫手数料</p>
+                    </div>
+                    <div class="list01">
+                        <p>輸送費用</p>
+                    </div>
+                    <div class="list02">
+                        <p>税金</p>
+                    </div>
+                    <div class="list02">
+                        <p>振込手数料</p>
+                    </div>
+                    <div class="list02">
+                        <p>輸入代行手数料</p>
+                    </div>
+                    <!-- <div class="clear"></div> -->
+                </div>
+                <div class="cost_message">
+                    <h1>総額を確認してから、ご依頼をお決めいただけます。</h1>
+                    <p>SEEDS SURFでの過去の取引よりお見積り例をご案内できますので、まずはお気軽にご相談下さい。</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact_wrapper">
+            <div class="container">
+                <h1>ご不明な点はありますか？</h1>
+                <p>些細なことでも構いません。<br>サービスについてご不明点があれば、まずはお問い合わせください。</p>
+                <a href="https://seeds-surf.com/%e3%81%8a%e5%95%8f%e3%81%84%e5%90%88%e3%82%8f%e3%81%9b/" class="btn contact">お問い合わせはこちら</a>
+                <h2>090-3048-2693</h2>
+                <p>平日10：00〜19：00<br>上記時間外はメールフォームよりお問い合わせ下さい。</p>
+            </div>
+        </div>
+        <div class="company_wrapper">
+            <div class="container">
+                <h1>Company</h1>
+                <p>会社概要</p>
+                <table align="center" class="company">
+                    <tr>
+                        <td>会社名</td>
+                        <td>SEEDS SURF</td>
+                    </tr>
+                    <tr>
+                        <td>所在地</td>
+                        <td>〒168-0074 東京都杉並区上高井戸3-1-24</td>
+                    </tr>
+                    <tr>
+                        <td>電話番号</td>
+                        <td>090-3048-2693</td>
+                    </tr>
+                    <tr>
+                        <td>代表者</td>
+                        <td>松本　聖矢</td>
+                    </tr>
+                    <tr>
+                        <td>設立</td>
+                        <td>2021年3月</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="container">
+                <img src="img/sslogo.jpg"
+                    alt="logo"
+                    width="40"
+                    height="40"
+                    class="logo">
+                <h1>SEEDS SURF</h1>
+                <p>〒168-0074 東京都杉並区上高井戸3-1-24<br>090-3048-2693</p>
+                <hr color="gray">
+                <small>(c) SEEDS SURF All right reserved</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
